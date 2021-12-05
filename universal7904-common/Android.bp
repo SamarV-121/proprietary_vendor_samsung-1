@@ -1485,19 +1485,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "macloader",
-	owner: "samsung",
-	srcs: ["proprietary/vendor/bin/hw/macloader"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "rild",
 	owner: "samsung",
 	srcs: ["proprietary/vendor/bin/hw/rild"],
@@ -1534,16 +1521,3 @@ cc_prebuilt_binary {
 	prefer: true,
 	soc_specific: true,
 }
-
-cc_prebuilt_binary {
-	name: "wlbtd",
-	owner: "samsung",
-	srcs: ["proprietary/vendor/bin/wlbtd"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-

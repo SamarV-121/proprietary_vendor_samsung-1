@@ -164,8 +164,6 @@ PRODUCT_PACKAGES += \
     cbd \
     android.hardware.drm@1.3-service.widevine \
     gpsd \
-    macloader \
     rild \
     vendor.samsung.hardware.gnss@2.0-service \
-    main_abox \
-    wlbtd
+    main_abox
