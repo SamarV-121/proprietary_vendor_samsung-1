@@ -169,6 +169,7 @@ z  unifiForceChannelBW
 z  unifiDPDTrainingDuration
 z  unifiCoexDebugOverrideBt
 z  unifiUseHostListenInterval
+z  unifiIgmpOffloadActivated
 z  unifiFastPowerSaveTimeout
 z  unifiFastPowerSaveTimeOutSmall
 z  unifiMLMESTAKeepAliveTimeout
@@ -289,6 +290,7 @@ z  unifiCCAMasterSwitch
 z  unifiRxSyncCCACfg
 z  unifiMacSecChanClearTime
 z  unifiBbBbaCcaCfg
+z  unifiRMMaxScanCacheCount
 z  unifiLnaControlEnabled
 z  unifiLnaControlRssiThresholdLower
 z  unifiLnaControlRssiThresholdUpper

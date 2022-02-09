@@ -69,16 +69,16 @@ Telenor HU"TelenorH
 Telekom HU"THU
 
 21670vodafone HU"voda HU
-
-21803	HT ERONET"HTERONET
+
+21803ERONET"ERONET
 
 21805m:tel"m:tel
 
 21890	BH Mobile"BHMOBILE
 
 21901HT HR"HT HR
-
-21902Telemach"TM HR
+
+21902TM HR"TM HR
 
 21910A1 HR"A1 HR
 
@@ -172,9 +172,6 @@ Telenor DK"TelenoDK
 23820Telia DK"Telia
 "
 23866Telia-Telenor DK"TT DK
-
-23877
-Telenor DK"TelenoDK
 
 24001TELIA S"TELIA
 
@@ -242,6 +239,8 @@ Telenor SE"TelenorS
 25028voda"voda
 
 25035MOTIV"MOTIV
+"
+25062Tinkoff Mobile"Tinkoff
 
 25099Beeline"Beeline
 
@@ -540,8 +539,8 @@ SPM AMERIS"AMERIS
 311370GCI"GCI
 
 311480Verizon"Verizon
-
-311530USANW"USANW
+
+311530PTCI"PTCI
 
 311560USA OTZ"OTZ
 
@@ -550,10 +549,10 @@ SPM AMERIS"AMERIS
 311600Limitless Mobile"LMUSA
 
 311630C Spire"C Spire
+$
+311650United Wireless USA"UWC
 
 311660	Metro PCS"MPCS
-$
-311710Northeast Wireless"NEWN
 
 311740TCI"TCI
 "
@@ -1182,6 +1181,8 @@ $
 45702ETL MOBILE NETWORK"ETLMNW
 
 45703Unitel"UNITEL
+"
+45707Best Telecom Laos"Best
 
 45708TPLUS"TPLUS
 
@@ -1318,8 +1319,6 @@ TOT Mobile"TOT
 52503SGP-M1"M1
 
 52505StarHub"StarHub
-"
-52507SGP Call Zone"CallZone
 
 52508StarHub"StarHub
 
@@ -1342,6 +1341,8 @@ TOT Mobile"TOT
 53701bmobile"bmobile
 
 53703DIGICEL"DIGICEL
+ 
+53704PG VODAFONE"VODAFONE
 
 53901U-CALL"U-CALL
 !
@@ -1746,10 +1747,10 @@ TelkomSA-R"Telkom-R
 71403CLARO PA"CLARO PA
 
 71404DIGICEL"DIGICEL
-
-714020Movistar"Movistar
+
+714020Tigo"Tigo
 
-71606MOVISTAR"MOVISTAR
+71606Movistar"Movistar
 
 71610	CLARO PER"ClaroPER
 
@@ -1878,4 +1879,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML$Published TS.25 Database 10 May 2021
+90150EchoStar Mobile"EML(Published TS.25 Database 11 October 2021

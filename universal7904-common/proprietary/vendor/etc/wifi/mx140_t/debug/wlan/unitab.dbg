@@ -169,6 +169,7 @@
 0 unifiDPDTrainingDuration
 0 unifiCoexDebugOverrideBt
 0 unifiUseHostListenInterval
+0 unifiIgmpOffloadActivated
 0 unifiFastPowerSaveTimeout
 0 unifiFastPowerSaveTimeOutSmall
 0 unifiMLMESTAKeepAliveTimeout
@@ -289,6 +290,7 @@
 0 unifiRxSyncCCACfg
 0 unifiMacSecChanClearTime
 0 unifiBbBbaCcaCfg
+0 unifiRMMaxScanCacheCount
 0 unifiLnaControlEnabled
 0 unifiLnaControlRssiThresholdLower
 0 unifiLnaControlRssiThresholdUpper

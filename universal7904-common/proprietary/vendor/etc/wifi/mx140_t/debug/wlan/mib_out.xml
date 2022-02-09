@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="HydraMeta.xsd">
-    <metadata version="498093787" subsystem_name="wlan" subsystem_layer="fw" subsystem_id="2">
+    <metadata version="498121412" subsystem_name="wlan" subsystem_layer="fw" subsystem_id="2">
         <source_control id="$Id$" time="$DateTime$" change="$Change$" author="$Author$" />
         <enum_def enum_name="unifiCSROnlyMIBShield">
             <enum_entry enum_label="open" enum_value="1" />
@@ -1151,7 +1151,7 @@
             <description_user>Extended capabilities. Bit field definition and coding follows IEEE 802.11 Extended Capability Information Element, with spare subfields for capabilities that are independent from chip/firmware implementation.</description_user>
             <type>octet_string</type>
             <range_min>9</range_min><range_max>9</range_max>
-            <default>{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00 }</default>
+            <default>{ 0x04, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x40, 0x00 }</default>
             <nature>software</nature>
         </config_element>
         <config_element name="unifiExtendedCapabilitiesDisabled" psid="2036">
@@ -4886,6 +4886,12 @@
             <nature>software</nature><!-- scan -->
         </config_element>
         <!-- End of roaming-relevant MIBs -->
+        <config_element name="unifiIgmpOffloadActivated" psid="2489">
+            <description_user>Activate IGMP IPv4 Offloading.</description_user>
+            <type>boolean</type>
+            <default>true</default>
+            <nature>software</nature>
+        </config_element>
         <config_element name="dot11TDLSPeerUAPSDIndicationWindow" psid="53">
             <description_user>The minimum time that needs to pass after the most recent TPU SP, before a RAME_TPU_SP indication can be sent to MLME</description_user>
             <type>uint16</type>
@@ -5226,6 +5232,12 @@
             <description_user>RM Enabled capabilities of the chip. See SC-503520-SP for further details.</description_user>
             <type>octet_string</type>
             <range_min>5</range_min><range_max>5</range_max><default>{ 0x73, 0x00, 0x00, 0x00, 0x00 }</default>
+            <nature>software</nature>
+        </config_element>
+        <config_element name="unifiRMMaxScanCacheCount" psid="5402">
+            <description_user>Maximum count the Mlme Measurement will maintain the scan result for beacon table mode.</description_user>
+            <type>uint16</type>
+            <range_min>10</range_min><range_max>150</range_max><default>70</default>
             <nature>software</nature>
         </config_element>
         <config_element name="unifiOverrideDefaultBETXOP" psid="2365">

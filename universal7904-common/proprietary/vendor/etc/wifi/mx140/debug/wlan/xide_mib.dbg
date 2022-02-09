@@ -37,7 +37,7 @@ Element unifiChipVersion  BasicType integer  BERType integer  OID 1.2.3.1.2022  
 Element unifiFirmwarePatchBuildID  BasicType integer  BERType integer_unsigned32  OID 1.2.3.1.2023  Access read_only  PSID 2023  GetFunction mibgetfirmwarebuildid  BFType uint32  BFAccess RO
 Element unifiExtendedCapabilitiesSoftAp  BasicType string  BERType string  OID 1.2.3.1.2024  Access read_write  Min 9  Max 9  PSID 2024  Default 0x01:0x00:0x00:0x00:0x00:0x00:0x00:0x40:0x00  BFType var  BFAccess RW
 Element unifiBasicCapabilities  BasicType integer  BERType integer  OID 1.2.3.1.2030  Access read_write  PSID 2030  Default 0x0730  BFType uint16  BFAccess RW
-Element unifiExtendedCapabilities  BasicType string  BERType string  OID 1.2.3.1.2031  Access read_write  Min 9  Max 9  PSID 2031  Default 0x00:0x00:0x00:0x00:0x00:0x00:0x00:0x40:0x00  BFType var  BFAccess RW
+Element unifiExtendedCapabilities  BasicType string  BERType string  OID 1.2.3.1.2031  Access read_write  Min 9  Max 9  PSID 2031  Default 0x04:0x00:0x00:0x00:0x00:0x00:0x00:0x40:0x00  BFType var  BFAccess RW
 Element unifiHtCapabilities  BasicType string  BERType string  OID 1.2.3.1.2032  Access read_write  Min 21  Max 21  PSID 2032  Default 0x6f:0x01:0x17:0xff:0x00:0x00:0x00:0x01:0x00:0x00:0x00:0x00:0x00:0x00:0x00:0x00:0x00:0x00:0x00:0x00:0x00  BFType var  BFAccess RW
 Element unifiRsnCapabilities  BasicType integer  BERType integer  OID 1.2.3.1.2034  Access read_write  PSID 2034  Default 0x248C  BFType uint16  BFAccess RW
 Element unifi24G40MHZChannels  BasicType integer  BERType string  OID 1.2.3.1.2035  Access read_only  PSID 2035  Default 0  BFType bool  BFAccess RO
@@ -169,6 +169,7 @@ Element unifiForceChannelBW  BasicType integer  BERType integer  OID 1.2.3.1.237
 Element unifiDPDTrainingDuration  BasicType integer  BERType integer  OID 1.2.3.1.2371  Access read_write  PSID 2371  Default 10  BFType uint16  BFAccess RW
 Element unifiCoexDebugOverrideBt  BasicType integer  BERType string  OID 1.2.3.1.2425  Access read_write  PSID 2425  Default 0  BFType bool  BFAccess RW
 Element unifiUseHostListenInterval  BasicType integer  BERType integer  OID 1.2.3.1.2476  Access read_write  Min 0  Max 65535  PSID 2476  Default 0  SetFunction mibuint16set  BFType uint16  BFAccess RW
+Element unifiIgmpOffloadActivated  BasicType integer  BERType string  OID 1.2.3.1.2489  Access read_write  PSID 2489  Default 1  BFType bool  BFAccess RW
 Element unifiFastPowerSaveTimeout  BasicType integer  BERType integer  OID 1.2.3.1.2500  Access read_only  Max 2147483647  PSID 2500  Default 400000  BFType uint32  BFAccess RO
 Element unifiFastPowerSaveTimeOutSmall  BasicType integer  BERType integer  OID 1.2.3.1.2501  Access read_only  Max 2147483647  PSID 2501  Default 200000  BFType uint32  BFAccess RO
 Element unifiMLMESTAKeepAliveTimeout  BasicType integer  BERType integer  OID 1.2.3.1.2502  Access read_write  Max 2147  PSID 2502  Default 30  BFType uint16  BFAccess RW
@@ -289,6 +290,7 @@ Element unifiCCAMasterSwitch  BasicType integer  BERType integer  OID 1.2.3.1.51
 Element unifiRxSyncCCACfg  BasicType integer  BERType integer  OID 1.2.3.1.5103  Access read_write  PSID 5103  GetFunction mibhalmacmodemgenericget  SetFunction mibhalmacmodemgenericset  BFType uint16  BFAccess RW
 Element unifiMacSecChanClearTime  BasicType integer  BERType integer  OID 1.2.3.1.5105  Access read_write  PSID 5105  GetFunction mibhalmacmacconfiggenericget  SetFunction mibhalmacmacconfiggenericset  BFType uint16  BFAccess RW
 Element unifiBbBbaCcaCfg  BasicType integer  BERType integer  OID 1.2.3.1.5108  Access read_write  PSID 5108  GetFunction mibhalmacmodemgenericget  SetFunction mibhalmacmodemgenericset  BFType uint16  BFAccess RW
+Element unifiRMMaxScanCacheCount  BasicType integer  BERType integer  OID 1.2.3.1.5402  Access read_write  Min 10  Max 150  PSID 5402  Default 70  BFType uint16  BFAccess RW
 Element unifiLnaControlEnabled  BasicType integer  BERType string  OID 1.2.3.1.6013  Access read_write  PSID 6013  Default 1  BFType bool  BFAccess RW
 Element unifiLnaControlRssiThresholdLower  BasicType integer  BERType integer  OID 1.2.3.1.6014  Access read_write  Min -128  Max 127  PSID 6014  Default -40  BFType int16  BFAccess RW
 Element unifiLnaControlRssiThresholdUpper  BasicType integer  BERType integer  OID 1.2.3.1.6015  Access read_write  Min -128  Max 127  PSID 6015  Default -30  BFType int16  BFAccess RW
