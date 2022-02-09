@@ -63,6 +63,7 @@ PRODUCT_PACKAGES += \
     libvideobeauty_interface \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.teeregistry@1.0 \
+    liboemcrypto \
     keystore.mdfpp \
     libkeymaster2_mdfpp \
     libkeymaster_helper_vendor \

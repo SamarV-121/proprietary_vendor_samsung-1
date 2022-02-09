@@ -140,7 +140,6 @@ PRODUCT_PACKAGES += \
     lib_soundaliveresampler \
     libaudio-ril \
     libaudio_soundtrigger \
-    liboemcrypto \
     librecordalive \
     libsamsungDiamondVoice \
     libstagefright_omx_vendor \
