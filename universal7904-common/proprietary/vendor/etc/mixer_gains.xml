@@ -549,7 +549,7 @@
 	<path name="gain-call_forwarding_primary">
 		<!-- we use default volume -->
 	</path>
-
+	
 	<!-- Spectro Scenario volume -->
 	<path name="gain-call_spectro">
 		<ctl name="DAC Gain" value="55" />
@@ -608,7 +608,7 @@
 	<path name="gain-camcorder-dualmic">
 		<ctl name="MIC1 Boost Volume" value="1" />
 		<ctl name="MIC2 Boost Volume" value="1" />
-		<ctl name="ADC Left Gain" value="129" />
+		<ctl name="ADC Left Gain" value="127" />
 		<ctl name="ADC Right Gain" value="127" />
 	</path>
 
@@ -629,8 +629,8 @@
 	<!-- voice recording input volume -->
 	<path name="gain-recording-mic">
 		<ctl name="MIC1 Boost Volume" value="1" />
-		<ctl name="ADC Left Gain" value="133" />
-		<ctl name="ADC Right Gain" value="133" />
+		<ctl name="ADC Left Gain" value="127" />
+		<ctl name="ADC Right Gain" value="127" />
 	</path>
 
 	<path name="gain-recording-2nd-mic">

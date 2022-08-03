@@ -115,6 +115,8 @@
 	<ctl name="Trimming of over current limit" value="I_1.93A" />
 	<ctl name="Trimming of boost voltage" value="BST_5.5V" />
 	<ctl name="Filtered VDD gain control" value="VDD_2.75V" />
+	<ctl name="Trimming of loop comp P gain" value="PG_0.25Mohm" />
+	<ctl name="Trimming of loop compensation" value="PI_50pF_0.25Mohm" />
 
 	<!-- Common control configurations -->
 	<path name="route-playback">
@@ -776,8 +778,7 @@
 		<ctl name="ABOX NSRC1" value="UAIF1" />
 		<ctl name="ABOX Sound Type" value="CALLFWD" />
 	</path>
-
-
+	
 	<!-- Spectro Scenario -->
 	<path name="call_spectro">
 		<ctl name="ABOX UAIF SPK0" value="SIFS0" />
@@ -1644,7 +1645,7 @@
 		<ctl name="ABOX SIFS2" value="SPUS OUT4" />
 		<ctl name="ABOX NSRC0" value="SIFS2" />
 	</path>
-
+	
 	<!-- FM Playback/Recording -->
 	<path name="fm_radio-speaker" >
 		<path name="route-fm" />
